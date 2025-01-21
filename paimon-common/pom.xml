@@ -356,6 +356,11 @@ under the License.
                                     <pattern>org.apache.datasketches</pattern>
                                     <shadedPattern>org.apache.paimon.shade.org.apache.datasketches</shadedPattern>
                                 </relocation>
+                                <!-- Relocate zstd. -->
+                                <relocation>
+                                    <pattern>com.github.luben.zstd</pattern>
+                                    <shadedPattern>org.apache.paimon.shade.com.github.luben.zstd</shadedPattern>
+                                </relocation>
                             </relocations>
                             <minimizeJar>true</minimizeJar>
                         </configuration>

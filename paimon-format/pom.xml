@@ -397,6 +397,12 @@ under the License.
                                     <pattern>org.apache.commons</pattern>
                                     <shadedPattern>org.apache.paimon.shade.org.apache.commons</shadedPattern>
                                 </relocation>
+
+                                <!-- Relocate zstd. -->
+                                <relocation>
+                                    <pattern>com.github.luben.zstd</pattern>
+                                    <shadedPattern>org.apache.paimon.shade.com.github.luben.zstd</shadedPattern>
+                                </relocation>
                             </relocations>
                         </configuration>
                     </execution>
